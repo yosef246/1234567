@@ -1,0 +1,30 @@
+package java1;
+
+public class circle {
+     point center;
+    double radius;
+
+    public circle(double radius) {
+        this.radius=radius;
+        this.center= new point(0,0);
+
+    }
+    public  void move(point p){
+        this.center= new point(p.x,p.y);
+    }
+    public double areaSize(){
+        double S = 0;
+        S = Math.pow(radius,2) * Math.PI;
+       return S;
+    }
+    public double circumference() {
+        double P = radius*2*Math.PI;
+        return P;
+    }
+    public boolean pointLocation(point p){
+       if(p.distance(center)> radius){
+           return false;
+       }else{
+           return true;
+       }
+    }

@@ -1,0 +1,43 @@
+package java1;
+
+public class point {
+
+	double a;
+	double b;
+	double c;
+	int num;
+	
+	public point(double a, double b, double c) {
+		
+		this.a = a;
+		this.b = b;
+		this.c = c;
+	}
+	
+	public point middle(point p) {
+		
+		return new point((this.a + p.a) / 2, (this.b + p.b) / 2);
+	}
+	
+	public double areaSize(point p) {
+		
+		double diffb;
+		double diffa;
+		 num=(diffa * diffb)/2;
+		
+		return num;
+	}
+	
+	public double perimeter(point p, point t) {
+		
+		double diffa; 
+		double diffb;
+		double diffc;
+		
+		num = (diffa*diffb)*(diffa*diffc)/2;
+		
+		return num;
+	}
+	
+	
+}
